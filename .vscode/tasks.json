@@ -15,10 +15,11 @@
         "-o",
         "${fileDirname}\\${fileBasenameNoExtension}.exe"
       ],
-      "options": { "cwd": "${fileDirname}" },
+      "options": { "cwd": "${fileDirname}", "env": { "PATH": "C:\\msys64\\ucrt64\\bin;${env:PATH}" } },
       "problemMatcher": "$gcc",
       "group": { "kind": "build", "isDefault": true },
       "presentation": { "reveal": "always", "panel": "shared", "clear": false }
     }
   ]
 }
+
